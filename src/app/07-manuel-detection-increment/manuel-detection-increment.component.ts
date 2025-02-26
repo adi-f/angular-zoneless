@@ -19,26 +19,25 @@ export class ManuelDetectionIncrementComponent {
   value = 1;
   changeDetectorRef = inject(ChangeDetectorRef);
 
-  constructor() {
-    const incrementBtn =
-      viewChild.required<ElementRef<HTMLButtonElement>>('incrementBtn');
-    const markForCheckBtn =
-      viewChild.required<ElementRef<HTMLButtonElement>>('markForCheckBtn');
-    const detectBtn =
-      viewChild.required<ElementRef<HTMLButtonElement>>('detectBtn');
+  incrementBtn =
+    viewChild.required<ElementRef<HTMLButtonElement>>('incrementBtn');
+  markForCheckBtn =
+    viewChild.required<ElementRef<HTMLButtonElement>>('markForCheckBtn');
+  detectBtn = viewChild.required<ElementRef<HTMLButtonElement>>('detectBtn');
 
+  constructor() {
     effect(() =>
-      incrementBtn()!.nativeElement!.addEventListener('click', () =>
+      this.incrementBtn()!.nativeElement!.addEventListener('click', () =>
         this.#increment(),
       ),
     );
     effect(() =>
-      markForCheckBtn()!.nativeElement!.addEventListener('click', () =>
+      this.markForCheckBtn()!.nativeElement!.addEventListener('click', () =>
         this.#markForCheck(),
       ),
     );
     effect(() =>
-      detectBtn()!.nativeElement!.addEventListener('click', () =>
+      this.detectBtn()!.nativeElement!.addEventListener('click', () =>
         this.#detect(),
       ),
     );
