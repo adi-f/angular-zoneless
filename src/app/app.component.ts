@@ -5,7 +5,7 @@ import { ObservableIncrementComponent } from './03-observable-increment/observab
 import { SignalInputIncrementComponent } from './04-signal-input-increment/signal-input-increment.component';
 import { SignalAsyncIncrementComponent } from './05-signal-async-increment/signal-async-increment.component';
 import { AsyncIncrementComponent } from './06 async-increment/async-increment.component';
-import { ManuelDetectionIncrementComponent } from './07-manuel-detection-increment/manuel-detection-increment.component';
+import { ManualDetectionIncrementComponent } from './07-manual-detection-increment/manual-detection-increment.component';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +16,7 @@ import { ManuelDetectionIncrementComponent } from './07-manuel-detection-increme
     SignalInputIncrementComponent,
     SignalAsyncIncrementComponent,
     AsyncIncrementComponent,
-    ManuelDetectionIncrementComponent,
+    ManualDetectionIncrementComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

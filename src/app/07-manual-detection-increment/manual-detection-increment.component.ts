@@ -9,13 +9,13 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-manuel-detection-increment',
+  selector: 'app-manual-detection-increment',
   imports: [],
-  templateUrl: './manuel-detection-increment.component.html',
-  styleUrl: './manuel-detection-increment.component.css',
+  templateUrl: './manual-detection-increment.component.html',
+  styleUrl: './manual-detection-increment.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ManuelDetectionIncrementComponent {
+export class ManualDetectionIncrementComponent {
   value = 1;
   changeDetectorRef = inject(ChangeDetectorRef);
 
