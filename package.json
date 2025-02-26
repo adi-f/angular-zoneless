@@ -6,8 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "format": "prettier src --write"
   },
   "private": true,
   "dependencies": {
@@ -29,6 +29,7 @@
     "@types/jasmine": "~5.1.0",
     "angular-eslint": "19.1.0",
     "eslint": "^9.20.0",
+    "prettier": "3.5.2",
     "typescript": "~5.7.2",
     "typescript-eslint": "8.23.0"
   }
