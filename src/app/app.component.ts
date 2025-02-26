@@ -9,10 +9,11 @@ import {
 import {
   SignalAsyncIncrementComponent
 } from './signal-async-increment/signal-async-increment.component';
+import {AsyncIncrementComponent} from './async-increment/async-increment.component';
 
 @Component({
   selector: 'app-root',
-  imports: [SimpleIncrementComponent, OnnchangeIncrementComponent, ObservableIncrementComponent, SignalInputIncrementComponent, SignalAsyncIncrementComponent],
+  imports: [SimpleIncrementComponent, OnnchangeIncrementComponent, ObservableIncrementComponent, SignalInputIncrementComponent, SignalAsyncIncrementComponent, AsyncIncrementComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
