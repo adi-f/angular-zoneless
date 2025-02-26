@@ -6,6 +6,7 @@ import { SignalInputIncrementComponent } from './04-signal-input-increment/signa
 import { SignalAsyncIncrementComponent } from './05-signal-async-increment/signal-async-increment.component';
 import { AsyncIncrementComponent } from './06 async-increment/async-increment.component';
 import { ManualDetectionIncrementComponent } from './07-manual-detection-increment/manual-detection-increment.component';
+import { SignalEffectIncrementComponent } from './08-signal-effect-increment/signal-effect-increment.component';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,7 @@ import { ManualDetectionIncrementComponent } from './07-manual-detection-increme
     SignalAsyncIncrementComponent,
     AsyncIncrementComponent,
     ManualDetectionIncrementComponent,
+    SignalEffectIncrementComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
