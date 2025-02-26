@@ -1,16 +1,17 @@
-import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 
 @Component({
   selector: 'app-onchange-inner',
   imports: [],
   templateUrl: './onchange-inner.component.html',
-  styleUrl: './onchange-inner.component.css'
+  styleUrl: './onchange-inner.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class OnchangeInnerComponent implements OnChanges {
 
   @Input({required: true})
-  valueInput: number = 0
-  valueOnChange: number = 0;
+  valueInput = 0
+  valueOnChange = 0;
 
   ngOnChanges(changes: SimpleChanges): void {
     if(changes['valueInput']) {

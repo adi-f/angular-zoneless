@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 
 @Component({
   selector: 'app-async-increment',
   imports: [],
   templateUrl: './async-increment.component.html',
-  styleUrl: './async-increment.component.css'
+  styleUrl: './async-increment.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AsyncIncrementComponent {
  valueSync = 1;

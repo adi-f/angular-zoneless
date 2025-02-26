@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {delay, map, Subject} from 'rxjs';
 import {AsyncPipe} from '@angular/common';
 
@@ -8,7 +8,8 @@ import {AsyncPipe} from '@angular/common';
     AsyncPipe
   ],
   templateUrl: './observable-increment.component.html',
-  styleUrl: './observable-increment.component.css'
+  styleUrl: './observable-increment.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ObservableIncrementComponent {
   #privateValue = 0;

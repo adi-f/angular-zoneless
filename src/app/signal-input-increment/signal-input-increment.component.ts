@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {SignalInnerComponent} from './signal-inner/signal-inner.component';
 
 @Component({
@@ -7,7 +7,8 @@ import {SignalInnerComponent} from './signal-inner/signal-inner.component';
     SignalInnerComponent
   ],
   templateUrl: './signal-input-increment.component.html',
-  styleUrl: './signal-input-increment.component.css'
+  styleUrl: './signal-input-increment.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SignalInputIncrementComponent {
  value = 1;
